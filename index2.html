@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will You Marry Me? ❤️</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+    body{
+      min-height:100vh;
+      background:linear-gradient(135deg,#ff758c,#ff7eb3);
+      display:flex;justify-content:center;align-items:center;
+      color:white;overflow:hidden
+    }
+    .container{
+      text-align:center;
+      background:rgba(255,255,255,.18);
+      padding:30px;
+      border-radius:20px;
+      backdrop-filter:blur(10px);
+      box-shadow:0 20px 40px rgba(0,0,0,.25);
+      max-width:420px;
+      animation:fadeIn 2s ease
+    }
+    h1{font-size:2.2rem;margin-bottom:10px}
+    p{margin:10px 0 20px}
+
+    /* PHOTO GALLERY */
+    .photos{
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      margin:15px 0 25px
+    }
+    .photos img{
+      width:120px;height:120px;
+      object-fit:cover;
+      border-radius:50%;
+      border:4px solid white;
+      box-shadow:0 8px 20px rgba(0,0,0,.3);
+      animation:pop 2s infinite alternate
+    }
+
+    .buttons{display:flex;gap:20px;justify-content:center}
+    button{
+      border:none;padding:12px 25px;font-size:1rem;
+      border-radius:30px;cursor:pointer;transition:.3s
+    }
+    .yes{background:#fff;color:#ff4b7d;font-weight:bold}
+    .yes:hover{transform:scale(1.1)}
+    .no{background:rgba(255,255,255,.4);color:white;position:relative}
+
+    .success{display:none}
+    .ring{font-size:3rem;animation:pop 1s infinite alternate}
+
+    .heart{
+      position:absolute;bottom:-20px;
+      font-size:20px;animation:float 6s infinite
+    }
+
+    @keyframes float{0%{transform:translateY(0);opacity:1}100%{transform:translateY(-120vh);opacity:0}}
+    @keyframes fadeIn{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
+    @keyframes pop{from{transform:scale(1)}to{transform:scale(1.15)}}
+  </style>
+</head>
+<body>
+
+<div class="container" id="proposal">
+  <h1>Hey My Love ❤️</h1>
+  <p>Every memory with you is my favorite.</p>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will You Marry Me? ❤️</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+    body{
+      min-height:100vh;
+      background:linear-gradient(135deg,#ff758c,#ff7eb3);
+      display:flex;justify-content:center;align-items:center;
+      color:white;overflow:hidden
+    }
+    .container{
+      text-align:center;
+      background:rgba(255,255,255,.18);
+      padding:30px;
+      border-radius:20px;
+      backdrop-filter:blur(10px);
+      box-shadow:0 20px 40px rgba(0,0,0,.25);
+      max-width:420px;
+      animation:fadeIn 2s ease
+    }
+    h1 span{
+      display:inline-block;
+      animation:glow 2s infinite alternate
+    }
+    @keyframes glow{
+      from{text-shadow:0 0 10px #fff}
+      to{text-shadow:0 0 25px #ffebf0}
+    }
+    p{margin:10px 0 20px}
+    .counter{font-size:.95rem;opacity:.9;margin-bottom:10px}
+
+    .photos{
+      display:flex;gap:12px;justify-content:center;margin:15px 0 25px
+    }
+    .photos img{
+      width:120px;height:120px;object-fit:cover;border-radius:50%;
+      border:4px solid white;box-shadow:0 8px 20px rgba(0,0,0,.3);
+      animation:pop 2s infinite alternate
+    }
+
+    .buttons{display:flex;gap:20px;justify-content:center}
+    button{
+      border:none;padding:12px 25px;font-size:1rem;
+      border-radius:30px;cursor:pointer;transition:.3s
+    }
+    .yes{background:#fff;color:#ff4b7d;font-weight:bold}
+    .yes:hover{transform:scale(1.1)}
+    .no{background:rgba(255,255,255,.4);color:white;position:relative}
+
+    .success{display:none}
+    .ring{font-size:3rem;animation:pop 1s infinite alternate}
+    .letter{
+      background:rgba(255,255,255,.2);
+      padding:15px;border-radius:15px;margin-top:15px
+    }
+
+    .heart{
+      position:absolute;bottom:-20px;font-size:20px;animation:float 6s infinite
+    }
+    .firework{
+      position:absolute;width:6px;height:6px;border-radius:50%;background:white;
+      animation:explode 1s forwards
+    }
+
+    @keyframes explode{
+      to{transform:translate(var(--x),var(--y)) scale(0);opacity:0}
+    }
+    @keyframes float{0%{transform:translateY(0);opacity:1}100%{transform:translateY(-120vh);opacity:0}}
+    @keyframes fadeIn{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
+    @keyframes pop{from{transform:scale(1)}to{transform:scale(1.15)}}
+  </style>
+</head>
+<body>
+
+<!-- Romantic Music -->
+<audio id="music" autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container" id="proposal">
+  <h1>Hey <span>My Love</span> ❤️</h1>
+  <div class="counter" id="counter"></div>
+  <p>Every memory with you is my favorite.</p>
+
+  <div class="photos">
+    <img src="photo1.jpg" alt="Us together">
+    <img src="photo2.jpg" alt="Our memory">
+  </div>
+
+  <h2>Will you marry me? 💍</h2>
+  <div class="buttons">
+    <button class="yes" onclick="accept()">YES ❤️</button>
+    <button class="no" onmouseover="moveNo(this)">NO 🙈</button>
+  </div>
+</div>
+
+<div class="container success" id="success">
+  <div class="ring">💍</div>
+  <h1>Forever Begins Now 😍</h1>
+  <div class="letter">
+    <p>
+      My love,<br><br>
+      From the moment we met, my world became warmer, brighter, and kinder.
+      I don’t promise perfection — but I promise effort, laughter, and forever.
+      Thank you for choosing me. ❤️
+    </p>
+  </div>
+</div>
+
+<script>
+// ACCEPT
+function accept(){
+  document.getElementById('proposal').style.display='none';
+  document.getElementById('success').style.display='block';
+  fireworks();
+}
+
+// NO BUTTON
+function moveNo(btn){
+  btn.style.position='absolute';
+  btn.style.left=Math.random()*(window.innerWidth-100)+'px';
+  btn.style.top=Math.random()*(window.innerHeight-50)+'px'
+}
+
+// HEARTS
+function createHeart(){
+  const h=document.createElement('div');
+  h.className='heart';h.innerHTML='❤️';
+  h.style.left=Math.random()*100+'vw';
+  h.style.animationDuration=Math.random()*3+4+'s';
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),6000)
+}
+setInterval(createHeart,300)
+
+// FIREWORKS
+function fireworks(){
+  for(let i=0;i<40;i++){
+    const f=document.createElement('div');
+    f.className='firework';
+    f.style.left='50%';f.style.top='50%';
+    f.style.setProperty('--x',Math.random()*400-200+'px');
+    f.style.setProperty('--y',Math.random()*400-200+'px');
+    document.body.appendChild(f);
+    setTimeout(()=>f.remove(),1000)
+  }
+}
+
+// COUNTER (CHANGE DATE HERE)
+const start=new Date('2023-01-01');
+setInterval(()=>{
+  const now=new Date();
+  const diff=now-start;
+  const days=Math.floor(diff/(1000*60*60*24));
+  document.getElementById('counter').innerText=
+    `Together for ${days} beautiful days ❤️`;
+},1000);
+</script>
+
+</body>
+</html>
